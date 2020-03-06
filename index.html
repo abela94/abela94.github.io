@@ -8,71 +8,83 @@
     <title>Abelardo Salazar</title>
 
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/sytles.css">
+
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
 
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="images/logo.png" alt="Logo" />
             </figure>
         </div>
 
-        <nav>
+        <nav class="menu">
             <ol>
 
                 <li>
-                    <a href="">Portfolio</a>
+                    <a class="link" href="#Portfolio">Portfolio</a>
                 </li>
 
                 <li>
-                    <a href="">Experience</a>
+                    <a class="link" href="#Experience">Experience</a>
                 </li>
 
                 <li>
-                    <a href="">Let's work together!</a>
+                    <a class="link" href="#Contact">Let's work together!</a>
                 </li>
 
             </ol>
         </nav>
     </header>
 
-    <section>
+    <section class="hero">
         <h1>
             I am Abelardo Salazar,<br> <strong>Frontend</strong> developer<br>and endless <strong>Learner</strong>
         </h1>
         <img src="images/hero.jpg" alt="Hero image" height="300" width="500">
     </section>
 
-    <section>
-        <h2>Portfolio</h2>
-        <article>
-            <h3>Development</h3>
-            <img src="images/platzi-video-react-native.png" alt="React project" width="400">
-            <h6>React native / React</h6>
-            <p><small><strong>Date:</strong> 30/3/2020</small></p>
-            <p><small><strong>Watch it:</strong> link</small></p>
-            <p><small><strong>Info</small></p>
-        </article>
-    </section>
+    <section id="Portfolio" class="portfolio">
+        <h2 class="project-title">Portfolio</h2>
+        <article class="project">
 
-    <section>
-        <h2>More about my experience</h2>
-        <article>
-            <figure>
-                <img src="images/platzi-conf.jpg" alt="Platzi conf" width="500" />
+            <h3 class="project-area">Development</h3>
+            <figure class="project-imageWrapper">
+                <img class="project-image" src="images/platzi-video-react-native.png" alt="React project" width="400">
             </figure>
-            <h3>AMCO</h3>
-            <p>Info</p>
-            <a href="">See it</a>
+            <h6 class="project-name">React native / React</h6>
+            <p class="project-date"><small><strong>Date:</strong> 30/3/2020</small></p>
+            <p class="project-link"><small><strong>Watch it:</strong> link</small></p>
+            <p class="project-description"><small><strong>Info</small></p>
         </article>
     </section>
 
-    <section>Contact info</section>
+    <section id="Experience" class="experience">
+        <h2>More about my experience</h2>
+        <article class="experience">
+            <figure class="experience-imageWrapper">
+                <img class="experience-image" src="images/platzi-conf.jpg" alt="Platzi conf" width="500" />
+            </figure>
+            <h3 class="experience-title">AMCO</h3>
+            <p class="experience-description">Info</p>
+            <a href="" class="experience-url">See it</a>
+        </article>
+    </section>
 
-    <footer>Footer</footer>
+    <section id="Contact" class="contact">
+        <form action="" class="contact-email">
+            <h3>Let's create something together!</h3>
+            <input id="email" type="text" placeholder="Enter your email.">
+            <button>Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">Footer</footer>
 
 
 
